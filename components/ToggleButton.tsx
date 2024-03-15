@@ -1,31 +1,68 @@
+// components/ProjectSwitch.tsx
 'use client';
 
 import React, { useState } from 'react';
-import Hero from './Hero';
-import Footer from './Footer';
-import WebProjects from './WebProjects';
-import ARProjects from './ARProjects';
 
-const ToggleButton: React.FC = () => {
-  const [showComponent1, setShowComponent1] = useState(true);
+interface ProjectSwitchProps {
+  webProjects: React.ReactNode;
+  arProjects: React.ReactNode;
+}
 
-  const toggleComponent = () => {
-    setShowComponent1(!showComponent1);
+const ProjectSwitch: React.FC<ProjectSwitchProps> = ({
+  webProjects,
+  arProjects,
+}) => {
+  const [selectedProject, setSelectedProject] = useState('web');
+
+  const toggleProject = (project: 'web' | 'ar') => {
+    if (selectedProject !== project) {
+      setSelectedProject(project);
+    }
   };
 
   return (
-<section className='flex justify-center h-fit'>
-    <div className='flex flex-col h-fit'>
+    <div className="flex flex-col items-center">
+      <div className='flex flex-row cursor-pointer space-x-4 mb-8'>
       <button
-        onClick={toggleComponent}
-        className="text-center w-auto h-fit bg-[#D7E0FF] hover:bg-[#D7E0FF] text-[#1D2233] font-normal py-4 mb-10 px-4 rounded"
+        type="button"
+        className={`
+          flex justify-between text-xl rounded p-2 ease-in-out duration-500 transition focus:outline-none ${
+            selectedProject === 'web' ? 'bg-[#D7E0FF] bg-opacity-0 text-[#1D2233]' : 'bg-[#172a36] bg-opacity-0'
+          }
+        `}
+        onClick={() => toggleProject('web')}
       >
-        Click
+        <span>Web Projects</span>
+        <span className="absolute -z-50 -mt-2 w-[150px] h-[46px] rounded bg-[#D7E0FF] transform transition duration-300 ease-in-out"
+          style={{
+            transform: selectedProject === 'web' ? 'translateX(-10%)' : 'translateX(90%)',
+          }}
+        />
       </button>
-      {showComponent1 ? <WebProjects /> : <ARProjects />}
+
+
+
+      <button
+        type="button"
+        className={`
+          flex justify-between text-xl rounded p-2 ease-in-out duration-500 transition focus:outline-none ${
+            selectedProject === 'ar' ? 'bg-[#D7E0FF] bg-opacity-0 text-[#1D2233]' : 'bg-[#172a36] bg-opacity-0'
+          }
+        `}
+        onClick={() => toggleProject('ar')}
+      >
+        <span>AR Projects</span>
+        <span hidden className="w-4 h-4 rounded bg-[#D7E0FF] transform transition duration-500 ease-in-out"
+          style={{
+            transform: selectedProject === 'ar' ? 'translateX(0)' : 'translateX(-100%)',
+          }}
+        />
+      </button>
+      </div>
+      {selectedProject === 'web' && webProjects}
+      {selectedProject === 'ar' && arProjects}
     </div>
-</section>
   );
 };
 
-export default ToggleButton;
+export default ProjectSwitch;
