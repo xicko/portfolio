@@ -1,22 +1,22 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-interface WebPortfolioItem {
+interface ARPortfolioItem {
     imageUrl: string;
     label: string;
     link: string;
 }
 
-interface WebPortfolioProps {
-    items: WebPortfolioItem[];
+interface ARPortfolioProps {
+    items: ARPortfolioItem[];
 }
 
-const WebShowcase: React.FC<WebPortfolioProps> = ({ items }) => {
+const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
     return (
         <div className='flex justify-center md:p-10 p-6'>
-            <div className="grid max-w-fit lg:grid-cols-2  min-[700px]:grid-cols-2 grid-rows-1 md:gap-x-16 md:gap-y-8 gap-8">
+            <div className="grid max-w-fit lg:grid-cols-3 min-[700px]:grid-cols-3 grid-cols-2 grid-rows-1 md:gap-x-16 md:gap-y-8 gap-8">
                 {items.map((item, index) => (
-                    <div key={index} className="max-w-[550px] relative overflow-hidden ">
+                    <div key={index} className="md:max-w-[345px] relative overflow-hidden ">
                         <Link href={item.link} className="block relative ">
                             
                                 <Image
@@ -41,4 +41,4 @@ const WebShowcase: React.FC<WebPortfolioProps> = ({ items }) => {
     );
 };
 
-export default WebShowcase;
+export default ARShowcase;

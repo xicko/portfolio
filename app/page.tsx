@@ -1,4 +1,5 @@
 /*import Buttone from "@/components/Buttone";*/
+import ARProjects from "@/components/ARProjects";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ToggleButton from "@/components/ToggleButton";
@@ -10,6 +11,7 @@ export default function Home() {
     <main className=''>
       <Hero/>
       <WebProjects/>
+      <ARProjects/>
       <Footer/>
     </main>
   );

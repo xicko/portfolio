@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(to bottom, #484c74, #403c4c);
+  /*background: linear-gradient(to bottom, #484c74, #403c4c);*/
+  /*background: linear-gradient(to bottom, #5e5e5e, #444444);*/
+  background: linear-gradient(to bottom, #2980b9, #2c3e50);
   background-attachment: fixed;
   color:white;
 }
@@ -13,6 +15,27 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+/* glow for page title */
+@keyframes glowing {
+  0% {
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.25);
+  }
+  100% {
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.animate-glow {
+  animation: glowing 5s infinite;
+}
+/* glow for page title */
+
 
 
 /* Mabry Font */

@@ -13,7 +13,7 @@ const Hero = () => {
             height={600}
             draggable={false}
             priority={true}
-            className='rounded-full border-[5px] border-white'/>
+            className='rounded-full border-[5px] border-white animate-glow'/>
         </div>
 
         <div className='space-y-6'>
