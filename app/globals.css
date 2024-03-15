@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(to bottom, #484c74, #302c34);
+  background: linear-gradient(to bottom, #484c74, #403c4c);
   background-attachment: fixed;
   color:white;
 }
