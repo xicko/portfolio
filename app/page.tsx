@@ -10,8 +10,7 @@ export default function Home() {
   return (
     <main className=''>
       <Hero/>
-      <WebProjects/>
-      <ARProjects/>
+      <ToggleButton/>
       <Footer/>
     </main>
   );

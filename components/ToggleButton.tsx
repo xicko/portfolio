@@ -14,11 +14,11 @@ const ToggleButton: React.FC = () => {
   };
 
   return (
-<section className='flex justify-center'>
-    <div className='flex flex-col'>
+<section className='flex justify-center h-fit'>
+    <div className='flex flex-col h-fit'>
       <button
         onClick={toggleComponent}
-        className="text-center w-auto bg-[#D7E0FF] hover:bg-[#D7E0FF] text-[#1D2233] font-normal py-4 mb-10 px-4 rounded"
+        className="text-center w-auto h-fit bg-[#D7E0FF] hover:bg-[#D7E0FF] text-[#1D2233] font-normal py-4 mb-10 px-4 rounded"
       >
         Click
       </button>
