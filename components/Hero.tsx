@@ -19,7 +19,7 @@ const Hero = () => {
         <div className='space-y-6'>
             <h1 className='text-center md:text-6xl text-5xl font-semibold'>Dashnyam Batbayar</h1>
 
-            <p className='text-center text-xl'>20   •   Wolli Creek, NSW, Australia</p>
+            <p className='text-center text-xl'>20   •   New South Wales, Australia</p>
 
             <p className='text-center text-xl'>Augmented Reality Developer, Front-End Developer</p>
         </div>

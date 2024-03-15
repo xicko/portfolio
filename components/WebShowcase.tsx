@@ -31,9 +31,9 @@ const WebShowcase: React.FC<PortfolioProps> = ({ items }) => {
                                 </div>
                             
                         </Link>
-                        <div className="py-4 mb-2">
-                            <div className="text-xl text-left">{item.label}</div>
-                        </div>
+                        <Link href={item.link}>
+                            <div className="text-xl text-left py-4 mb-2">{item.label}</div>
+                        </Link>
                     </div>
                 ))}
             </div>
