@@ -22,7 +22,7 @@ const ProjectSwitch: React.FC<ProjectSwitchProps> = ({
 
   return (
     <div className="flex flex-col items-center">
-      <div className='flex flex-row cursor-pointer space-x-4 mb-8'>
+      <div className='flex flex-row shrink grow cursor-pointer space-x-4 mb-8'>
       <button
         type="button"
         className={`
@@ -33,12 +33,12 @@ const ProjectSwitch: React.FC<ProjectSwitchProps> = ({
         onClick={() => toggleProject('web')}
       >
         <span>Web Projects</span>
-        <span className="absolute -z-40 -mt-2 min-w-[150px] h-[46px] rounded-lg bg-[#D7E0FF] transform transition duration-300 ease-in-out"
+        <span className="absolute -z-40 -mt-2 w-[150px] h-[46px] rounded-lg bg-[#D7E0FF] transform transition duration-300 ease-in-out"
           style={{
             transform: selectedProject === 'web' ? 'translateX(-10%)' : 'translateX(90%)',
           }}
         />
-        <span className="absolute -z-50 mt-[-8px] min-w-[300px] h-[46px] rounded-lg bg-[#172a36] bg-opacity-20"
+        <span className="absolute -z-50 mt-[-8px] w-[300px] h-[46px] rounded-lg bg-[#172a36] bg-opacity-20"
           style={{
             transform: selectedProject === 'web' ? 'translateX(-5%)' : 'translateX(-5%)',
           }}
