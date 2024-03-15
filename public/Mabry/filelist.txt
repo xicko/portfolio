@@ -1,0 +1,10 @@
+MabryPro-Black.woff2
+MabryPro-BlackItalic.woff2
+MabryPro-Bold.woff2
+MabryPro-BoldItalic.woff2
+MabryPro-Italic.woff2
+MabryPro-Light.woff2
+MabryPro-LightItalic.woff2
+MabryPro-Medium.woff2
+MabryPro-MediumItalic.woff2
+MabryPro-Regular.woff2
