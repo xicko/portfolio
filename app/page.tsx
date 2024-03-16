@@ -12,10 +12,9 @@ export default function Home() {
     <main className=''>
       <Hero/>
       <ProjectSwitch
-        webProjects={<WebProjects />}
-        arProjects={<ARProjects />}
-      />
-      <Footer/>
+        webProjects={<WebProjects/>}
+        arProjects={<ARProjects/>}/>
+      
     </main>
   );
 }

@@ -49,7 +49,11 @@ if (element !== null) {
     }
   }, []);
 
-  return <div ref={scrollContainerRef} data-scroll-container>{children}</div>;
+  return (
+    <div ref={scrollContainerRef} data-scroll-container className='md:pb-20 pb-0'>
+      {children}
+    </div>
+  );
 };
 
 export default CustomScroll;
