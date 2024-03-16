@@ -16,7 +16,7 @@ interface ARProjectData {
 
 // Define AR projects with their slugs as keys
 const arProjects: Record<string, ARProjectData> = {
-  'burger-king-mongolia': {
+  'burgerking1': {
     videoSource: '/videos/burgerking.mp4',
     topTitle: 'This Or That?',
     topText: 'Burger King Mongolia',
@@ -58,7 +58,7 @@ const arProjects: Record<string, ARProjectData> = {
     topText: 'Artisty',
     effectLink: 'https://www.instagram.com/ar/1133924154084681/',
     placeHolder: '/thumbnails/webp/devsummit.webp',
-    fullDescription: 'This interactive filter, created for Artisty at DevSummit 2022, utilizes full-body tracking. Users can virtually try on futuristic mixed reality headsets. Additionally, when users fully enter the frame, they transform into neon robots.',
+    fullDescription: 'An interactive filter created for Artisty at DevSummit 2022 that utilizes full-body tracking to let users try-on futuristic mixed reality headsets. Additionally, when users fully enter the frame, they transform into neon robots.',
   },
 
   'koreanfood': {
