@@ -17,7 +17,7 @@ const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
             <div className="grid max-w-fit lg:grid-cols-3 min-[700px]:grid-cols-3 grid-cols-2 grid-rows-1 md:gap-x-16 md:gap-y-8 gap-x-6 gap-y-4">
                 {items.map((item, index) => (
                     <div key={index} className="md:max-w-[345px] relative overflow-hidden ">
-                        <Link href={item.link} className="block relative ">
+                        <Link href="/[ARprojects]" as={`/${item.link}`} key={item.link} className="block relative ">
                             
                                 <Image
                                     className="w-full rounded-md transition duration-300 ease-in-out transform hover:opacity-75"
@@ -31,7 +31,7 @@ const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
                                 </div>
                             
                         </Link>
-                        <Link href={item.link}>
+                        <Link href="/[ARprojects]" as={`/${item.link}`} key={item.link}>
                             <div className="md:text-2xl text-md font-medium text-white text-left py-4 mb-2">{item.label}</div>
                         </Link>
                     </div>
