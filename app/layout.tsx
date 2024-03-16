@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className='customfont scroll-smooth'>
         <CustomScroll>
           {children}
-          <Footer/>
+          
           </CustomScroll>
       </body>
     </html>

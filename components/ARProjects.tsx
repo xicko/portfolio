@@ -6,7 +6,7 @@ const projects = [
     {
         imageUrl: '/thumbnails/webp/burgerking.webp',
         label: 'This or That - Burger King',
-        link: '/project1',
+        link: '/AR/ThisOrThat',
     },
     {
         imageUrl: '/thumbnails/webp/lightninghalo.webp',
