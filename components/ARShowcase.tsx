@@ -32,7 +32,7 @@ const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
                             
                         </Link>
                         <Link href={item.link}>
-                            <div className="md:text-2xl text-xl font-medium text-white text-left py-4 mb-2">{item.label}</div>
+                            <div className="md:text-2xl text-md font-medium text-white text-left py-4 mb-2">{item.label}</div>
                         </Link>
                     </div>
                 ))}
