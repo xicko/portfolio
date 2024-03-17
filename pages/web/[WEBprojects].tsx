@@ -22,7 +22,7 @@ const webProjects: Record<string, WEBProjectData> = {
     projectLink: "https://www.arfx.org",
     alt: "/thumbnails/webp/burgerking.webp",
     fullDescription:
-      "A mock augmented reality agency website that features it's projects, clients, experience, statistics, and why you should choose their service. ",
+      "This mock website showcases a fictional augmented reality agency. It highlights the agency's projects, client list, team experience, industry statistics, and the value proposition of their services.",
   },
 
   Dashnyam: {
@@ -31,7 +31,7 @@ const webProjects: Record<string, WEBProjectData> = {
     projectLink: "https://www.dashnyam.com",
     alt: "/thumbnails/webp/lightninghalo.webp",
     fullDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Tellus in hac habitasse platea dictumst.",
+      "This personal website showcases Dashnyam's experience and skills as an Augmented Reality developer. It features examples of AR projects, AR graphic assets, along with contact information and client experience.",
   },
 
   Inxta: {
@@ -40,7 +40,7 @@ const webProjects: Record<string, WEBProjectData> = {
     projectLink: "https://inxta.dashnyam.com",
     alt: "/thumbnails/webp/unitel.webp",
     fullDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Tellus in hac habitasse platea dictumst.",
+      "The landing page highlights Inxta, a modified Android app for Instagram, offering in-app media downloads, ad-free usage, and privacy controls such as blocking seen receipts and anonymous story/livestream viewing and more. The website includes version details and a download link.",
   },
 };
 
@@ -82,7 +82,7 @@ const WEBProject: React.FC = () => {
           draggable={false}/>
         </div>
         
-        <div className="md:text-black text-white md:space-y-2 md:min-w-[400px] md:max-w-[500px] space-y-4 md:px-0 px-2 md:pr-10 md:pt-4">
+        <div className="md:text-black text-white md:space-y-2 md:min-w-[600px] md:max-w-[600px] space-y-4 md:px-0 px-2 md:pr-10 md:pt-4">
           <div>
             <button
               className="translate-x-0 hover:translate-x-[-15px] ease duration-500 transition z-50 text-slate-700 top-4 md:right-auto right-4 md:left-4 font-medium text-xl py-2 hidden md:block px-4 rounded"
