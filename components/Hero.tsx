@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Social from "./Social";
 
 const Hero = () => {
   return (
@@ -24,6 +25,9 @@ const Hero = () => {
             <p className='text-center text-xl'>Augmented Reality Developer, Front-End Developer</p>
         </div>
       
+        <div>
+          <Social/>
+        </div>
       </section>
     </div>
   );
