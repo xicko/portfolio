@@ -25,14 +25,14 @@ const arProjects: Record<string, ARProjectData> = {
     fullDescription: 'Interactive AR filter designed for Burger King Mongolia\'s Instagram audience, it allows users to make choices between two presented options in a fun and engaging way. It adds a playful element to brand interactions on the platform.'
   },
 
-  "lightning-halo": {
+  lightninghalo: {
     videoSource: "/videos/lightninghalo.mp4",
     topTitle: "Lightning Halo",
     topText: "",
     effectLink: "https://www.instagram.com/ar/3419292975068246/",
     placeHolder: "/thumbnails/webp/lightninghalo.webp",
     fullDescription:
-      "This concept AR filter combines the aesthetics of an Angel and Lightning God.  A halo hovers above the user's head, while sparking lightning bolts can be created between the hands and emanate from the eyes.",
+      "This concept AR filter combines the aesthetics of an Angel and Lightning God.  A halo hovers above the user's head, while electric lightning bolts can be created between the hands and emanate from the eyes.",
   },
 
   unitel: {

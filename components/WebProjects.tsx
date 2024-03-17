@@ -5,17 +5,17 @@ const projects = [
     {
         imageUrl: '/web/arfx.webp',
         label: 'ARFX - Mock AR Agency',
-        link: '/project1',
+        link: './web/ARFX',
     },
     {
         imageUrl: '/web/dashnyam.webp',
         label: 'Dashnyam Personal Web',
-        link: '/project2',
+        link: './web/Dashnyam',
     },
     {
         imageUrl: '/web/inxta.webp',
         label: 'Inxta, a modified Instagram client',
-        link: '/project2',
+        link: './web/Inxta',
     },
     // Add more projects as needed
 ];
