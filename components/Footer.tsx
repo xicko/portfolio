@@ -3,6 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
+    
     <footer className='flex md:justify-between md:flex-row flex-col-reverse md:mx-20 mt-8 md:px-20 px-8 md:mb-20 mb-10 customfont'>
         <div className='md:text-left md:text-xl text-lg text-center'>
             <p>Made with ♥ by Dashnyam<br></br>
@@ -14,6 +15,7 @@ const Footer = () => {
             <Link href='mailto:hello@dashnyam.com'>hello@dashnyam.com</Link></p>
         </div>
     </footer>
+    
   )
 }
 

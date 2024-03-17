@@ -36,7 +36,7 @@ const VideoPlayerWelcome = ({ videoSource, subText, topText, placeHolder }: Vide
 
         <div className="absolute bottom-4 left-5 text-white">
           <p className="text-md font-normal drop-shadow-md">{subText}</p>
-          <p className="text-lg font-semibold drop-shadow-md">{topText}</p>
+          <p className="md:text-2xl text-xl font-semibold drop-shadow-md">{topText}</p>
         </div>
 
         <video
