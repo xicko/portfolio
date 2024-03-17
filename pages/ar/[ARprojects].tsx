@@ -17,7 +17,7 @@ interface ARProjectData {
 // Define AR projects with their slugs as keys
 const arProjects: Record<string, ARProjectData> = {
   burgerking1: {
-    videoSource: "/videos/burgerking.mp4",
+    videoSource: "/videos/burgerking726.mp4",
     topTitle: "This Or That?",
     topText: "Burger King Mongolia",
     effectLink: "https://www.instagram.com/ar/284575277304570/",
