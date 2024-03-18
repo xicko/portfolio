@@ -11,6 +11,20 @@ const CustomScroll = dynamic(() => import("@/components/CustomScroll"), { ssr: f
 export const metadata: Metadata = {
   title: 'Portfolio - Dashnyam',
   description: '',
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/dashblack.ico',
+        href: '/dashblack.ico',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/dashwhite.ico',
+        href: '/dashwhite.ico',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
