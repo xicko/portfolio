@@ -18,7 +18,7 @@ const Social = () => {
           </Link>
 
           <Link
-            href={"https://www.instagram.com/thexicko"}
+            href={"https://www.instagram.com/dashnyima"}
             target="_blank"
             aria-label="Instagram"
           >
