@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import VideoPlayerWelcome from "@/components/VideoPlayerWelcome";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Head from 'next/head';
 
 // Define the type for AR project data
 interface ARProjectData {
@@ -12,6 +13,9 @@ interface ARProjectData {
   effectLink: string;
   placeHolder: string;
   fullDescription: string;
+
+  title: string;
+  metadescription: string;
 }
 
 // Define AR projects with their slugs as keys
@@ -22,7 +26,10 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "Burger King Mongolia",
     effectLink: "https://www.instagram.com/ar/284575277304570/",
     placeHolder: "/thumbnails/webp/burgerking.webp",
-    fullDescription: 'Interactive AR filter designed for Burger King Mongolia\'s Instagram audience, it allows users to make choices between two presented options in a fun and engaging way. It adds a playful element to brand interactions on the platform.'
+    fullDescription: 'Interactive AR filter designed for Burger King Mongolia\'s Instagram audience, it allows users to make choices between two presented options in a fun and engaging way. It adds a playful element to brand interactions on the platform.',
+    
+    title: 'This Or That?',
+    metadescription: 'AR Project for Burger King Mongolia',
   },
 
   lightninghalo: {
@@ -31,9 +38,11 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "",
     effectLink: "https://www.instagram.com/ar/3419292975068246/",
     placeHolder: "/thumbnails/webp/lightninghalo.webp",
-    fullDescription:
-      "This concept AR filter combines the aesthetics of an Angel and Lightning God.  A halo hovers above the user's head, while electric lightning bolts can be created between the hands and emanate from the eyes.",
-  },
+    fullDescription: "This concept AR filter combines the aesthetics of an Angel and Lightning God.  A halo hovers above the user's head, while electric lightning bolts can be created between the hands and emanate from the eyes.",
+    
+    title: 'Lightning Halo',
+    metadescription: 'Personal Project',
+    },
 
   unitel: {
     videoSource: "/videos/unitel.mp4",
@@ -41,9 +50,11 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "Unitel",
     effectLink: "https://www.instagram.com/ar/430300512125145/",
     placeHolder: "/thumbnails/webp/unitel.webp",
-    fullDescription:
-      "This AR filter utilizes target tracking on Unitel's new rebranding posters. The filter dynamically overlays a neon outline and animates green dots/bubbles, creating an engaging interactive experience for viewers.",
-  },
+    fullDescription: "This AR filter utilizes target tracking on Unitel's new rebranding posters. The filter dynamically overlays a neon outline and animates green dots/bubbles, creating an engaging interactive experience for viewers.",
+    
+    title: 'Unitel Green Dot',
+    metadescription: 'AR Project for Unitel',
+    },
 
   whynaadam: {
     videoSource: "/videos/whynaadam.mp4",
@@ -51,9 +62,11 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "Next Electronics",
     effectLink: "https://www.instagram.com/ar/759472885195057/",
     placeHolder: "/thumbnails/webp/whynaadam.webp",
-    fullDescription:
-      "This interactive filter uses randomization to reveal a user's Naadam experience, transforming them into a Mongolian wrestler, or a queen, or even a funny potato! Developed for Next Electronics' social media campaign promoting the Naadam celebration in Mongolia, in collaboration with artist Young Mo'g's single \"Naadii\"",
-  },
+    fullDescription: "This interactive filter uses randomization to reveal a user's Naadam experience, transforming them into a Mongolian wrestler, or a queen, or even a funny potato! Developed for Next Electronics' social media campaign promoting the Naadam celebration in Mongolia, in collaboration with artist Young Mo'g's single \"Naadii\"",
+  
+    title: 'WhyNaadam',
+    metadescription: 'AR Project for Next Electronics',
+    },
 
   devsummit: {
     videoSource: "/videos/devsummit.mp4",
@@ -61,9 +74,11 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "Artisty",
     effectLink: "https://www.instagram.com/ar/1133924154084681/",
     placeHolder: "/thumbnails/webp/devsummit.webp",
-    fullDescription:
-      "An interactive filter created for Artisty at DevSummit 2022 that utilizes full-body tracking to let users try-on futuristic mixed reality headsets. Additionally, when users fully enter the frame, they transform into neon robots.",
-  },
+    fullDescription: "An interactive filter created for Artisty at DevSummit 2022 that utilizes full-body tracking to let users try-on futuristic mixed reality headsets. Additionally, when users fully enter the frame, they transform into neon robots.",
+    
+    title: 'DevSummit 2022',
+    metadescription: 'AR Project for Artisty',
+    },
 
   koreanfood: {
     videoSource: "/videos/koreanfood.mp4",
@@ -71,9 +86,11 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "Korea Travel Organization",
     effectLink: "https://www.instagram.com/ar/4367278686689320/",
     placeHolder: "/thumbnails/webp/koreanfood.webp",
-    fullDescription:
-      "This interactive game filter challenges users to catch falling Korean dishes, increasing their score. Reach a score of 10 to win! Developed for the Korean Travel Organization Mongolia's giveaway campaign.",
-  },
+    fullDescription: "This interactive game filter challenges users to catch falling Korean dishes, increasing their score. Reach a score of 10 to win! Developed for the Korean Travel Organization Mongolia's giveaway campaign.",
+    
+    title: 'Korean Food',
+    metadescription: 'AR Project for Korea Travel Organization',
+    },
 
   hanbok: {
     videoSource: "/videos/hanbok.mp4",
@@ -81,9 +98,11 @@ const arProjects: Record<string, ARProjectData> = {
     topText: "Korea Travel Organization",
     effectLink: "https://www.instagram.com/ar/1548842432128283/",
     placeHolder: "/thumbnails/webp/hanbok.webp",
-    fullDescription:
-      "This interactive filter allows users to virtually try on different types of Korean traditional clothes, Hanbok. It was created for a giveaway campaign by the Korean Travel Organization Mongolia.",
-  },
+    fullDescription: "This interactive filter allows users to virtually try on different types of Korean traditional clothes, Hanbok. It was created for a giveaway campaign by the Korean Travel Organization Mongolia.",
+    
+      title: 'Hanbok',
+    metadescription: 'AR Project for Korea Travel Organization',
+    },
 
   tengri: {
     videoSource: "/videos/tengri.mp4",
@@ -92,6 +111,9 @@ const arProjects: Record<string, ARProjectData> = {
     effectLink: "https://www.instagram.com/ar/1368282557107974/",
     placeHolder: "/thumbnails/webp/tengri.webp",
     fullDescription: "This filter incorporates full Mongolian aesthetics with a touch of eeriness. Users will see themselves with glowing white eyes and black tears. The filter applies the ancient Mongol/Xiongnu symbols for Fire, Sun, and Moon on the left cheek. On the right cheek, it displays the quote \"Eternal Blue Sky\" in traditional Mongolian script with a volumetric light effect. Additionally, a quote from the Middle Mongol era written in traditional script slowly pulses in the background.",
+    
+    title: 'Tengri',
+    metadescription: 'Personal Project',
   },
 
   haayachgesen: {
@@ -101,6 +123,9 @@ const arProjects: Record<string, ARProjectData> = {
     effectLink: "https://www.instagram.com/ar/223689836421545/",
     placeHolder: "/thumbnails/webp/haayachgesen.webp",
     fullDescription: "A randomizer filter presents users with a series of randomized options. Based on their results, it reveals a positive action or outcome. This filter was created for EMPR's campaign promoting positivity and combating hate. The goal is to discourage harmful hate comments that negatively impact all parties involved.",
+    
+    title: 'Haaya ch gesen',
+    metadescription: 'AR Project for EMPR',
   },
 
   nextgroup: {
@@ -110,6 +135,9 @@ const arProjects: Record<string, ARProjectData> = {
     effectLink: "https://www.instagram.com/ar/457150153253641/",
     placeHolder: "/thumbnails/webp/nextgroup.webp",
     fullDescription: "A randomizer filter that offers users a series of randomized options to reveal what brings them happiness. Created for Next Group's New Year social media campaign.",
+    
+    title: 'Next Group',
+    metadescription: 'AR Project for Next Group',
   },
 
   christmashat: {
@@ -119,6 +147,9 @@ const arProjects: Record<string, ARProjectData> = {
     effectLink: "https://www.instagram.com/ar/312880286763692/",
     placeHolder: "/thumbnails/webp/christmashat.webp",
     fullDescription: "A Christmas-themed filter allowing users to virtually try on four different colored Christmas hats in 3D, accompanied by a subtle snowing effect. ",
+    
+    title: 'Christmas Hat',
+    metadescription: 'Personal Project',
   },
 
   xickomode: {
@@ -128,6 +159,9 @@ const arProjects: Record<string, ARProjectData> = {
     effectLink: "https://www.instagram.com/ar/2070284609781254/",
     placeHolder: "/thumbnails/webp/xickomode.webp",
     fullDescription: "A filter featuring an animated dynamic fire effect on the user, overlaid with purple lightning animation and edge-detection sparkles. The filter is color graded for a slightly more saturated look.",
+  
+    title: 'XICKO MODE',
+    metadescription: 'Personal Project',
   },
 
   blindinglights: {
@@ -137,6 +171,9 @@ const arProjects: Record<string, ARProjectData> = {
     effectLink: "https://www.instagram.com/ar/539568850052441/",
     placeHolder: "/thumbnails/webp/blindinglights.webp",
     fullDescription: "A filter demonstrating volumetric lightning, creating a shiny light effect when pointed at bright light sources.",
+  
+    title: 'Blinding Lights',
+    metadescription: 'Personal Project',
   },
 };
 
@@ -161,10 +198,16 @@ const ARProject: React.FC = () => {
     effectLink,
     placeHolder,
     fullDescription,
+    title,
+    metadescription,
   } = projectData;
 
   return (
     <section className=" flex shrink grow justify-center md:flex-row flex-col customfont md:mb-0 mb-20">
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metadescription} />
+      </Head>
       <div className='flex justify-center pt-8'>
         <button
           className="block md:hidden md:absolute z-50 text-white top-4 md:right-auto left-4 right-4 md:left-4 font-medium text-lg py-2 px-4 -mb-8 rounded"

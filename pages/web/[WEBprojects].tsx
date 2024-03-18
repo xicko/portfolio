@@ -4,6 +4,7 @@ import VideoPlayerWelcome from "@/components/VideoPlayerWelcome";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Head from 'next/head';
 
 // Define the type for AR project data
 interface WEBProjectData {
@@ -12,6 +13,9 @@ interface WEBProjectData {
   projectLink: string;
   alt: string;
   fullDescription: string;
+
+  title: string;
+  metadescription: string;
 }
 
 // Define AR projects with their slugs as keys
@@ -23,7 +27,9 @@ const webProjects: Record<string, WEBProjectData> = {
     alt: "/thumbnails/webp/burgerking.webp",
     fullDescription:
       "This mock website showcases a fictional augmented reality agency. It highlights the agency's projects, client list, team experience, industry statistics, and the value proposition of their services.",
-  },
+    title: 'ARFX',
+    metadescription: 'Mock AR Agency Project',
+    },
 
   Dashnyam: {
     imageUrl: "/web/detail/dashnyamdetail.webp",
@@ -32,7 +38,9 @@ const webProjects: Record<string, WEBProjectData> = {
     alt: "/thumbnails/webp/lightninghalo.webp",
     fullDescription:
       "This personal website showcases Dashnyam's experience and skills as an Augmented Reality developer. It features examples of AR projects, AR graphic assets, along with contact information and client experience.",
-  },
+    title: 'Dashnyam',
+    metadescription: 'Personal Portfolio Project',
+    },
 
   Inxta: {
     imageUrl: "/web/detail/inxtadetail.webp",
@@ -41,7 +49,9 @@ const webProjects: Record<string, WEBProjectData> = {
     alt: "/thumbnails/webp/unitel.webp",
     fullDescription:
       "The landing page highlights Inxta, a modified Android app for Instagram, offering in-app media downloads, ad-free usage, and privacy controls such as blocking seen receipts and anonymous story/livestream viewing and more. The website includes version details and a download link.",
-  },
+    title: 'Inxta',
+    metadescription: 'Modified Instagram Apk Project',
+    },
 };
 
 const WEBProject: React.FC = () => {
@@ -58,11 +68,15 @@ const WEBProject: React.FC = () => {
     return <div>Project not found</div>;
   }
 
-  const { alt, imageUrl, topTitle, projectLink, fullDescription } =
+  const { alt, imageUrl, topTitle, projectLink, fullDescription, title, metadescription } =
     projectData;
 
   return (
     <section className=" flex shrink grow justify-center md:flex-row flex-col customfont md:mb-[-50px] mb-20">
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metadescription} />
+      </Head>
       <div className="flex justify-center pt-8">
         <button
           className="block md:hidden md:absolute z-50 text-white top-4 md:right-auto left-4 right-4 md:left-4 font-medium text-lg py-2 px-4 -mb-8 rounded"
