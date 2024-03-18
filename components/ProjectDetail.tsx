@@ -24,7 +24,7 @@ const ProjectDetail = () => {
             <VideoPlayerWelcome videoSource={videoSource} subText={''} topText={topText} placeHolder={'/thumbnails/webp/burgerking.webp'}/>
             <div className='text-black md:space-y-8 space-y-4 md:px-0 px-2'>
                 <h2 className='text-6xl font-semibold'>This or That</h2>
-                <p className='text-2xl font-normal md:min-w-[400px] md:max-w-[500px] h-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br></br>
+                <p className='text-2xl  font-normal md:min-w-[400px] md:max-w-[500px] h-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br></br>
                 <Link href={effectLink} className='text-black bg-[#D7E0FF] px-4 py-2 text-xl rounded'>Use Effect</Link>
             </div>
             

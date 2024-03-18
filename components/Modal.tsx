@@ -31,7 +31,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         style={{
           backgroundColor: 'white',
           padding: '2rem',
-          borderRadius: '10px',
+          borderRadius: '10px', 
           overflowY: 'auto',
           display: 'flex',
           flexDirection: 'column',
