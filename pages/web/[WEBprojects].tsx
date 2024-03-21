@@ -1,28 +1,10 @@
 import React from "react";
-import type { Metadata } from "next";
 import { useRouter } from "next/router";
 import VideoPlayerWelcome from "@/components/VideoPlayerWelcome";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Head from 'next/head';
-
-export const metadata: Metadata = {
-  icons: {
-    icon: [
-      {
-        media: '(prefers-color-scheme: light)',
-        url: '/dashblack.ico',
-        href: '/dashblack.ico',
-      },
-      {
-        media: '(prefers-color-scheme: dark)',
-        url: '/dashwhite.ico',
-        href: '/dashwhite.ico',
-      },
-    ],
-  },
-};
 
 // Define the type for AR project data
 interface WEBProjectData {
