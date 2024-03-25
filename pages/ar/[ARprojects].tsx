@@ -216,7 +216,7 @@ const ARProject: React.FC = () => {
           ← Back to Home
         </button>
       </div>
-      <div className="md:bg-white border-opacity-90 md:rounded-xl w-fit h-full md:my-[150px] md:pt-0 pt-8 md:px-0 md:pb-0 md:mt-8 flex justify-center md:flex-row flex-col md:space-y-0 space-y-8 space-x-8">
+      <div className="md:bg-white border-opacity-90 md:rounded-xl w-fit h-full md:my-[100px] md:pt-0 pt-8 md:px-0 md:pb-0 md:mt-20 flex justify-center md:flex-row flex-col md:space-y-0 space-y-8 space-x-8">
         <VideoPlayerWelcome
           videoSource={videoSource}
           subText=""
