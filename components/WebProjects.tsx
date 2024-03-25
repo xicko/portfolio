@@ -23,7 +23,7 @@ const projects = [
 const WebProjects = () => {
   return (
     <section className='flex justify-center md:mx-10 mx-6'>
-        <div className='bg-[#172a36] bg-opacity-20 rounded-2xl w-fit h-[10%] overflow-hidden'>
+        <div className='bg-[#585858] bg-opacity-20 rounded-2xl w-fit h-[10%] overflow-hidden'>
             <WebShowcase items={projects}/>
         </div>
     </section>
