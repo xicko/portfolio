@@ -112,7 +112,7 @@ const WEBProject: React.FC = () => {
             <Link
             href={projectLink}
             target="_blank"
-            className="text-black bg-[#D7E0FF] hover:bg-[#273357] hover:text-white ease duration-150 transition px-4 py-2 text-xl rounded">
+            className="text-black bg-[#D7E0FF] hover:bg-[#a7baff] ease duration-300 transition px-4 py-2 text-xl rounded">
             Visit Project
             </Link>
           </div>
