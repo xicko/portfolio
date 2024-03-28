@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import VideoPlayerWelcome from "@/components/VideoPlayerWelcome";
+import VideoPlayer from "@/components/VideoPlayer";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Head from 'next/head';
@@ -217,7 +217,7 @@ const ARProject: React.FC = () => {
         </button>
       </div>
       <div className="md:bg-white border-opacity-90 md:rounded-xl w-fit h-full md:my-[100px] md:pt-0 pt-8 md:px-0 md:pb-0 md:mt-20 flex justify-center md:flex-row flex-col md:space-y-0 space-y-8 space-x-8">
-        <VideoPlayerWelcome
+        <VideoPlayer
           videoSource={videoSource}
           subText=""
           topText={topText}

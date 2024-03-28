@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoPlayerWelcome from './VideoPlayerWelcome';
+import VideoPlayerWelcome from './VideoPlayer';
 import Link from 'next/link';
 
 export interface LinkProps {

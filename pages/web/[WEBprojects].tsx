@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import VideoPlayerWelcome from "@/components/VideoPlayerWelcome";
+import VideoPlayerWelcome from "@/components/VideoPlayer";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Image from "next/image";

@@ -9,7 +9,7 @@ export interface VideoPlayerProps {
   placeHolder: string;
 }
 
-const VideoPlayerWelcome = ({ videoSource, subText, topText, placeHolder }: VideoPlayerProps) => {
+const VideoPlayer = ({ videoSource, subText, topText, placeHolder }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
@@ -43,6 +43,7 @@ const VideoPlayerWelcome = ({ videoSource, subText, topText, placeHolder }: Vide
           ref={videoRef}
           poster={placeHolder}
           autoPlay
+          disableRemotePlayback
           loop
           muted
           playsInline
@@ -60,4 +61,4 @@ const VideoPlayerWelcome = ({ videoSource, subText, topText, placeHolder }: Vide
   );
 };
 
-export default VideoPlayerWelcome;
+export default VideoPlayer;
