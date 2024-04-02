@@ -104,17 +104,17 @@ const arProjects: Record<string, ARProjectData> = {
     metadescription: 'AR Project for Korea Travel Organization',
     },
 
-  tengri: {
-    videoSource: "/videos/tengri.mp4",
-    topTitle: "Tengri",
-    topText: "",
-    effectLink: "https://www.instagram.com/ar/1368282557107974/",
-    placeHolder: "/thumbnails/webp/tengri.webp",
-    fullDescription: "This filter incorporates full Mongolian aesthetics with a touch of eeriness. Users will see themselves with glowing white eyes and black tears. The filter applies the ancient Mongol/Xiongnu symbols for Fire, Sun, and Moon on the left cheek. On the right cheek, it displays the quote \"Eternal Blue Sky\" in traditional Mongolian script with a volumetric light effect. Additionally, a quote from the Middle Mongol era written in traditional script slowly pulses in the background.",
-    
-    title: 'Tengri',
-    metadescription: 'Personal Project',
-  },
+    berserk: {
+      videoSource: "/videos/berserk.mp4",
+      topTitle: "Berserk",
+      topText: "",
+      effectLink: "https://www.instagram.com/ar/906922696576707/",
+      placeHolder: "/thumbnails/webp/berserk.webp",
+      fullDescription: "This filter uses skin segmentation to apply a virtual tattoo design to the user\'s entire body, including a selection of facial tattoos. The tattoo artwork is applied realistically to the user\'s skin tone and movement.",
+      
+      title: 'Berserk',
+      metadescription: 'Personal Project',
+    },
 
   haayachgesen: {
     videoSource: "/videos/haayachgesen.mp4",
@@ -126,6 +126,18 @@ const arProjects: Record<string, ARProjectData> = {
     
     title: 'Haaya ch gesen',
     metadescription: 'AR Project for EMPR',
+  },
+
+  tengri: {
+    videoSource: "/videos/tengri.mp4",
+    topTitle: "Tengri",
+    topText: "",
+    effectLink: "https://www.instagram.com/ar/1368282557107974/",
+    placeHolder: "/thumbnails/webp/tengri.webp",
+    fullDescription: "This filter incorporates full Mongolian aesthetics with a touch of eeriness. Users will see themselves with glowing white eyes and black tears. The filter applies the ancient Mongol/Xiongnu symbols for Fire, Sun, and Moon on the left cheek. On the right cheek, it displays the quote \"Eternal Blue Sky\" in traditional Mongolian script with a volumetric light effect. Additionally, a quote from the Middle Mongol era written in traditional script slowly pulses in the background.",
+    
+    title: 'Tengri',
+    metadescription: 'Personal Project',
   },
 
   nextgroup: {

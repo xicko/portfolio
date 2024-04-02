@@ -39,14 +39,19 @@ const projects = [
       link: './ar/hanbok',
     },
     {
-      imageUrl: '/thumbnails/webp/tengri.webp',
-      label: 'Tengri',
-      link: './ar/tengri',
+      imageUrl: '/thumbnails/webp/berserk.webp',
+      label: 'Berserk',
+      link: './ar/berserk',
     },
     {
       imageUrl: '/thumbnails/webp/haayachgesen.webp',
       label: 'Haaya ch gesen',
       link: './ar/haayachgesen',
+    },
+    {
+      imageUrl: '/thumbnails/webp/tengri.webp',
+      label: 'Tengri',
+      link: './ar/tengri',
     },
     {
       imageUrl: '/thumbnails/webp/nextgroup.webp',
