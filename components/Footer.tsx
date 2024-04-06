@@ -4,8 +4,8 @@ import React from 'react'
 const Footer = () => {
   return (
     
-    <footer className='flex justify-center md:min-w-[700px] md:mt-10'>
-      <div className='flex md:justify-between md:flex-row md:space-x-[800px] flex-col-reverse md:mx-20 mt-8 md:px-20 px-8 md:mb-20 mb-10 customfont'>
+    <footer className='flex justify-center  md:mt-10'>
+      <div className='md:w-[1244px] flex md:justify-between md:flex-row  flex-col-reverse md:mx-0 mt-8 md:px-0 px-8 md:mb-20 mb-10 customfont'>
         <div className='md:text-left md:text-xl text-lg text-center'>
             <p>Made with ♥ by Dashnyam<br></br>
             Built with NextJS</p>
