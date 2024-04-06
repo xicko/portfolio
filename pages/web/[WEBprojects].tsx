@@ -93,7 +93,9 @@ const WEBProject: React.FC = () => {
           alt={alt}
           width={600}
           height={600}
-          draggable={false}/>
+          draggable={false}
+          placeholder='blur'
+          blurDataURL={imageUrl}/>
         </div>
         
         <div className="md:text-black text-white md:space-y-2 md:min-w-[600px] md:max-w-[600px] space-y-4 md:px-0 px-2 md:pr-10 md:pt-4">

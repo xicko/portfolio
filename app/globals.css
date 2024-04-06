@@ -136,8 +136,50 @@ body {
   font-style: normal;
   font-display: swap;
 }
+/* Mabry Font */
 
 .customfont {
-  font-family: 'MabryPro', sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
-/* Mabry Font */
+
+/* Avenir Font */
+@font-face {
+  font-family: 'Avenir';
+  src: url('/Avenir/Avenir-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/Avenir/Avenir-Heavy.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/Avenir/Avenir-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/Avenir/Avenir-Book.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/Avenir/Avenir-Light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+/* Avenir Font */
