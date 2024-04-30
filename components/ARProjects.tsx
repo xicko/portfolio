@@ -73,7 +73,6 @@ const projects = [
       label: 'Blinding Lights',
       link: './ar/blindinglights',
     },
-    // Add more projects as needed
 ];
 
 const ARProjects = () => {

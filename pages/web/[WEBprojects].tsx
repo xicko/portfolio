@@ -91,8 +91,8 @@ const WEBProject: React.FC = () => {
           className="w-full rounded-[10px] border-4 border-white border-opacity-90"
           src={imageUrl}
           alt={alt}
-          width={600}
-          height={600}
+          width={755}
+          height={450}
           draggable={false}
           placeholder='blur'
           blurDataURL={imageUrl}/>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import AnimatedComponent from "@/components/AnimatedComponent";
 
 interface ARPortfolioItem {
     imageUrl: string;
@@ -16,6 +17,7 @@ const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
         <div className='flex justify-center md:p-10 p-6'>
             <div className="grid max-w-fit lg:grid-cols-3 min-[700px]:grid-cols-3 grid-cols-2 grid-rows-1 md:gap-x-16 md:gap-y-8 gap-x-6 gap-y-4">
                 {items.map((item, index) => (
+                    <AnimatedComponent>
                     <div key={index} className="md:max-w-[345px] relative overflow-hidden ">
                         <Link href="/[ARprojects]" as={`/${item.link}`} key={item.link} className="block relative ">
                             
@@ -23,8 +25,8 @@ const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
                                     className="w-full rounded-md transition duration-300 ease-in-out transform hover:opacity-75"
                                     src={item.imageUrl}
                                     alt={item.label}
-                                    width={600}
-                                    height={600}
+                                    width={425}
+                                    height={755}
                                     placeholder='blur'
                                     blurDataURL={item.imageUrl}
                                 />
@@ -34,9 +36,10 @@ const ARShowcase: React.FC<ARPortfolioProps> = ({ items }) => {
                             
                         </Link>
                         <Link href="/[ARprojects]" as={`/${item.link}`} key={item.link}>
-                            <div className="md:text-2xl text-md font-medium text-white text-left py-4 mb-2">{item.label}</div>
+                            <div className="md:text-2xl text-md font-bold text-white text-left py-4 mb-2">{item.label}</div>
                         </Link>
                     </div>
+                    </AnimatedComponent>
                 ))}
             </div>
         </div>
