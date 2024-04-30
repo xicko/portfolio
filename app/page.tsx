@@ -1,11 +1,10 @@
 /*import Buttone from "@/components/Buttone";*/
 import ARProjects from "@/components/ARProjects";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
 import AnimatedComponent from "@/components/AnimatedComponent";
 import ProjectSwitch from "@/components/ToggleButton";
 import WebProjects from "@/components/WebProjects";
-
+import Hero from "@/components/Hero";
 
 
 export default function Home() {
